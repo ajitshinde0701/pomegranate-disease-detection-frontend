@@ -1,0 +1,229 @@
+.page-section {
+  min-height: 100vh;
+  padding-top: 90px;
+  background: linear-gradient(135deg, #f4faf2, #eaf5e6);
+}
+
+.banner-section {
+  text-align: center;
+  padding: 70px 20px;
+  background:
+    linear-gradient(rgba(18, 82, 37, 0.88), rgba(33, 122, 58, 0.85)),
+    url("https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.banner-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.banner-section p {
+  font-size: 1.18rem;
+  max-width: 750px;
+  margin: auto;
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+.info-section {
+  padding: 60px 6%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  border-top: 5px solid #2e7d32;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  color: #1b5e20;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding: 120px 6% 60px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 40px;
+  background:
+    linear-gradient(rgba(11, 61, 30, 0.9), rgba(24, 118, 51, 0.78)),
+    url(C:\Users\ACER\Desktop\G12\anarmitra-frontend\public\pomogranate.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3.6rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 760px;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  padding: 13px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.primary-btn {
+  background: #b71c1c;
+  color: white;
+}
+
+.secondary-btn {
+  background: white;
+  color: #1b5e20;
+}
+
+.hero-gallery {
+  display: grid;
+  gap: 15px;
+}
+
+.hero-gallery img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.hero-gallery img:first-child {
+  height: 280px;
+}
+
+.form-card {
+  max-width: 520px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 38px rgba(0,0,0,0.12);
+}
+
+.form-card h2 {
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.form-card p {
+  color: #666;
+  margin-bottom: 22px;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #d4dfd0;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+  border-color: #2e7d32;
+}
+
+.error-box {
+  background: #ffebee;
+  color: #b71c1c;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.success-box {
+  background: #e8f5e9;
+  color: #1b5e20;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-section h1 {
+    font-size: 2.3rem;
+  }
+}
+.language-select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #cfe3cf;
+  background: white;
+  color: #1b5e20;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+.voice-reader {
+  cursor: pointer;
+}
+
+.voice-reader:hover {
+  color: #c8e6c9;
+  text-decoration: underline;
+}
+.info-card.voice-card {
+  cursor: pointer;
+}
+
+.info-card.voice-card:hover {
+  border-top-color: #b71c1c;
+}
