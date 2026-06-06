@@ -22,10 +22,9 @@ export const detectDisease = async (
       imageFile
     );
 
-    // API Request
+    const predictUrl = import.meta.env.VITE_DISEASE_PREDICT_URL || "http://127.0.0.1:5000/predict";
     const response = await api.post(
-
-      "http://127.0.0.1:5000/predict",
+      predictUrl,
 
       formData,
 

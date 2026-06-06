@@ -36,7 +36,8 @@ export default function AdvisorDashboard() {
   });
 
   const connectWebSocket = () => {
-    const socket = new SockJS("http://localhost:8080/ws");
+    const wsUrl = import.meta.env.VITE_WS_URL || "http://localhost:8080/ws";
+    const socket = new SockJS(wsUrl);
 
     const client = new Client({
       webSocketFactory: () => socket,
